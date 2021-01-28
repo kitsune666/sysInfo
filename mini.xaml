@@ -1,0 +1,22 @@
+﻿<Window x:Class="SysInfo.mini"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SysInfo"
+        mc:Ignorable="d"
+        Title="mini" SizeToContent="Height" Width="350" AllowsTransparency="True" WindowStyle="None">
+    <Grid Height="100" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Content="Other" x:Name="lbot1" Foreground="White" HorizontalAlignment="Left" Opacity="1"/>
+            <ProgressBar  x:Name="prBar2"/>
+        </StackPanel>
+
+    </Grid>
+
+</Window>

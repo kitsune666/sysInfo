@@ -1,0 +1,94 @@
+﻿<Window x:Class="SysInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SysInfo"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="Height" Width="350" OpacityMask="Black" AllowsTransparency="True" WindowStyle="None" Opacity="0.5">
+    <Grid Background="Black" Opacity="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Row="0" >
+            <Label Content="CPU"  x:Name="Lbcpu"  Foreground="White" FontWeight="Bold" Background="#111" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"/>
+            <Label Content="CPU" x:Name="Lbcpu1" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="Lbcpu2" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="Lbcpu3" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="Lbcpu4" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="Lbcpu5" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="Lbcpu6" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="Lbcpu7" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="CPU" x:Name="LbcpuCore"  Foreground="White" FontWeight="Bold" Background="#111" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+        <Grid Grid.Row="1" x:Name="grid1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" x:Name="grid2">
+            <Label Content="MEM" Height="25" Opacity="1" x:Name="Lbmem" Foreground="White" Background="#111" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" FontWeight="Bold"/>
+            <Label Content="MEM" x:Name="Lbmem1" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem2" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem3" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem4" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem5" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem6" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem7" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="MEM" x:Name="Lbmem8" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+            <Label Content="--------E" x:Name="Lbmem9" Opacity="1" Foreground="White"  HorizontalAlignment="Left" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" x:Name="grid3">
+            <Label Content="HDD" Height="25" Opacity="1" x:Name="Lbhdd" Foreground="White" Background="#111" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" FontWeight="Bold"/>
+            <Label Content="HDD Usage - 0%" Opacity="1" x:Name="Lbhdd1" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="HDD Usage - 0%" Opacity="1" x:Name="Lbhdd2" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="HDD Usage - 0%" Opacity="1" x:Name="Lbhdd3" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="HDD Usage - 0%" Opacity="1" x:Name="Lbhdd4" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="HDD Usage - 0%" Opacity="1" x:Name="Lbhdd5" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="--------E" Opacity="1" x:Name="Lbhdd6" Foreground="White" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" x:Name="grid4">
+            <Label Content="LAN" Height="25" x:Name="lblan" Opacity="1" Foreground="White" Background="#111" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" FontWeight="Bold"/>
+            <Label Content="Public IP" x:Name="lblan1" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="Lan1" x:Name="lblan2" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="Lan2" x:Name="lblan3" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="LAN" x:Name="lblan4" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="--------E" x:Name="lblan5" Foreground="White" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1"  x:Name="grid5">
+            <Label Content="Other"  Height="25" x:Name="lbot" Opacity="1" Foreground="White" Background="#111" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" FontWeight="Bold"/>
+            <Label Content="Other" x:Name="lbot1" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="Other" x:Name="lbot2" Foreground="White" HorizontalAlignment="Left"/>
+            <Label Content="Other" x:Name="lbot3" Foreground="White" HorizontalAlignment="Left"/>
+            <Slider x:Name="slider1" Minimum="0" Maximum="1" LargeChange="0.1" Value="1" ValueChanged="slider1_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" x:Name="grid6">
+            <Button x:Name="btnpin"  Content="pin" Background="#000" Foreground="#fff" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="Button_pin"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1"  x:Name="grid7">
+            <Button x:Name="btnclose"  Content="close" Background="#000" Foreground="#fff" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="btnclose_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
