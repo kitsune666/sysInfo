@@ -1,3 +1,3 @@
 # sysInfo
 
-![alt text]()
+![alt text](https://i.postimg.cc/wB2RHm14/image.png)
